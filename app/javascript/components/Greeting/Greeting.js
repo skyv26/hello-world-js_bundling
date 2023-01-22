@@ -1,5 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const Greeting = () => <h1>Greeting Here</h1>;
+const Greeting = () => {
+  const message = useSelector((state) => state.greeting);
+  const { greeting } = message;
+  return (
+    <h1>{greeting}</h1>
+  );
+};
 
 export default Greeting;
