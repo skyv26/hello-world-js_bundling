@@ -1,0 +1,15 @@
+.Greeting {
+  margin-top: 1.75rem;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(137, 43, 226, 0.025);
+}
+
+.Greeting h1 {
+  color: rgb(0, 115, 255);
+  font-size: 6.25rem;
+  font-family: 'Pacifico', cursive;
+}

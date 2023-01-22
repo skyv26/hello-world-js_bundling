@@ -1,0 +1,35 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: thin solid rgba(0, 0, 0, 0.1);
+  padding: 1.75rem;
+}
+
+.Logo {
+  font-family: 'Lobster', cursive;
+  font-size: 4.75rem;
+  color: rgba(255, 69, 106, 0.893);
+  text-shadow: 0.6rem 0.6rem 0.25rem rgba(179, 179, 179, 0.25);
+}
+
+.UnorderedList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.Link {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: blueviolet;
+  box-shadow: 0 1rem 1rem 0.2rem rgba(128, 128, 128, 0.25);
+}
+
+.Link.Active {
+  background-color: blueviolet;
+  color: white;
+}
