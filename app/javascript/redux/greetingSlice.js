@@ -6,7 +6,7 @@ const GreetingMethod = '/get/greeting';
 const initialState = {};
 
 export const GreetingThunk = createAsyncThunk(GreetingMethod, async () => {
-  const greeting = await (await fetch(`${GreetingAPI}&classificationName=sports`)).json();
+  const greeting = await (await fetch(`${GreetingAPI}`)).json();
   return greeting;
 });
 
@@ -17,7 +17,9 @@ const GreetingSlice = createSlice({
   extraReducers: {
     [GreetingThunk.fulfilled]: (state, action) => {
       const { payload } = action;
-      console.log(payload);
+      return {
+        ...payload,
+      };
     },
   },
 });
