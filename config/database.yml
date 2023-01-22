@@ -84,3 +84,4 @@ production:
   database: hello_world_current_production
   username: hello_world_current
   password: <%= ENV["HELLO_WORLD_CURRENT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
